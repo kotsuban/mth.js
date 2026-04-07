@@ -13,7 +13,6 @@ const STATE = {
   CODE: 'CODE'
 }
 
-/** Inline markdown string into html. */
 function inline(content = "") {
   return content
     .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (_, alt, href) => {
