@@ -32,7 +32,11 @@ function inline(content = "") {
     });
 }
 
-/** Parse a markdown to html. */
+/** 
+  * Convert Markdown to HTML string and return it.
+  * @param {string} md - Markdown string.
+  * @returns {string} HTML string.
+  */
 export function mth(md = '') {
   const lines = md.split('\n');
   const result = [];
